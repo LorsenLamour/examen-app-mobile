@@ -4,9 +4,13 @@ import { View, Text, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <View>
+    <View className='container'>
       <Text>Bonjourno</Text>
+      <View>
+      
+      </View>
     </View>
+  
   );
 }
 
