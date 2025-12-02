@@ -42,10 +42,10 @@ export default function HomeScreen() {
     <Text>Appuyer pour remplir la barre le plus vite possible</Text>
     <TouchableOpacity style={styles.btnRed}
      onPress={handlePress} 
-     disabled={progressPercentage===100}>
-      <Text>Appuyer pour chanter</Text>
-
-    </TouchableOpacity>
+     disabled={progressPercentage === 100}>
+      <Text style={styles.btnTextWhite} >{progressPercentage === 100? 'Recommencer' : 'Appuyez sur moi'}</Text>
+      </TouchableOpacity> 
+    
 
 
 
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f0f0f0',
-    paddingVertical: 40, alignItems: 'center',
+    paddingVertical: 40,
+    alignItems: 'center',
     gap: 60,
   },
   title: {
@@ -80,13 +81,14 @@ const styles = StyleSheet.create({
   },
   btnRed: {
     backgroundColor: "#ff4d4d",
-    width: screenWidth - 40,
-    height: 56,
+    width: screenWidth - 200,
+    height: 100,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 2,
    
   },
-  btnTextWhite: { color: '#fff', fontSize: 20, fontWeight: '600', }, percentageText: { fontSize: 22, fontWeight: 'bold', color: '#333', },
+  btnTextWhite: { color: '#fff', fontSize: 20, fontWeight: '600', },
+   percentageText: { fontSize: 22, fontWeight: 'bold', color: '#333', },
 });
