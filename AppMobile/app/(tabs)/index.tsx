@@ -1,22 +1,28 @@
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Dimensions, StyleSheet, Animated } from 'react-native';
 
-import { View, Text, StyleSheet } from 'react-native';
-
+const screenWidth = Dimensions.get('window').width;
 
 export default function HomeScreen() {
+
   return (
-    <View className='container'>
-      <Text>Bonjourno</Text>
-      <View>
-      
-      </View>
+    <View style={styles.container}>
+
+      <Text style={styles.title}>Lala</Text>
+
+     
+
+
+
     </View>
-  
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-  
+  container: {
   },
- 
+  title: 
+  {
+    
+  }
 });
